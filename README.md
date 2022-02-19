@@ -1,5 +1,6 @@
 # MiPagina
-Mi primer pagina creada por mi mismo solito
-Ahora estoy agregando más texto porque sigo probando el problema de la passphrase y ahora el nuevo que es el warning permanently added ... ecdsa
+Este sitio es la agrupación de archivos creados por mí durante la clase teórica de CSS Y HTML de Platzi, es por ello que la mayoría de los archivos son aburridos.
 
-En este párrafo confirmo que sí, efectivamente después de borrar y crear varias llaves ssh mientras no cierre el terminal no me vuelve a pedir passphrase, sin embargo habia algo raro y era el mensaje "Warning: Permanently added the ECDSA host key for IP address '140.82.114.3' to the list of known hosts." cada vez que hacía un pull, ya se quitó. Ahora solo falta probar cerrando el terminal y volver a comenzar
+Sin embargo, hay uno que si llama la atención y es el que más me gusta porque allí demostré bastante de lo aprendido. Es una tarjeta de colección de mí.
+
+<a src="https://sandieg0.github.io/MiPagina/Card.html" alt="Carta">Card</a>
