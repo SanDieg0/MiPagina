@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: peachpuff;
+            position: relative;
+            top: 20px;
+            
+        }
+        .item{
+            width: 20px;
+            height: 20px;
+            background-color: hotpink;
+            position: absolute;
+            right: 0;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background-color: lightcyan;
+            position: fixed;
+            top: 0;
+        }
+
+        ul p{
+            position: sticky;
+            top: 0;
+        }
+        .kontainer{
+            display: flex;
+            justify-content: space-around;
+
+            width: 100%;
+            height: 30px;
+            background-color: crimson;
+            position: relative;
+        }
+        .pp{
+            width: 20px;
+            height: 20px;
+            background-color: aliceblue;
+            position: inherit;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+    <div class="kontainer">
+        <div class="pp"></div>
+        <div class="pp"></div>
+    </div>
+    <p class="parrafo">Lorem Ipsum
+        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ligula elit. Suspendisse sodales nunc ante, id tempor arcu blandit nec. Nam iaculis enim vitae nulla semper dictum. Curabitur facilisis lectus et enim hendrerit, quis interdum odio pulvinar. Donec ac metus quis orci laoreet semper vitae nec augue. Fusce auctor et eros vitae consectetur. Nulla sed purus euismod, eleifend risus facilisis, venenatis mauris. Ut tempus dolor velit, vitae sollicitudin augue sollicitudin nec. Proin a dolor at mauris vulputate ultricies ac in turpis. Duis fringilla justo et tincidunt convallis. Praesent viverra faucibus nulla sit amet consectetur. Mauris in lobortis magna. Quisque finibus facilisis nisl, ut fringilla mauris volutpat ac. Proin finibus tellus vitae massa auctor, vitae sollicitudin massa suscipit. Vestibulum euismod lectus in mauris faucibus imperdiet. Suspendisse pharetra risus vel hendrerit aliquet.
+        
+        Sed ultrices nunc eget elit lacinia, quis lobortis lorem lacinia. Nulla facilisi. Donec vulputate nec lorem non interdum. Praesent id elementum mi. Mauris tempus eget augue a eleifend. In auctor, augue ut lobortis tristique, eros eros fringilla justo, eget volutpat lorem nulla id turpis. Nunc enim elit, condimentum non pretium vel, interdum vel est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas ut turpis a suscipit. Cras nec ante metus. Etiam cursus dolor eget tempor sagittis.
+        
+        Integer rutrum risus sed posuere porta. Curabitur sed vehicula felis. Phasellus fringilla tellus ligula, id laoreet urna porta in. Mauris pretium dui non consectetur consequat. Cras porta vestibulum vestibulum. Praesent a ultrices augue. Integer sapien ipsum, tempor quis quam eget, imperdiet molestie erat.
+        
+        Aliquam non est sapien. Mauris rutrum urna a bibendum lacinia. Proin imperdiet est tortor, vitae fermentum arcu ultrices eget. Pellentesque elementum id odio at vehicula. Nam sit amet semper sapien. Nulla consectetur gravida odio. Quisque porta, nibh eu consectetur eleifend, dolor dui volutpat erat, nec sollicitudin mauris lacus suscipit lacus. Sed maximus lobortis dolor, eget consequat leo gravida vitae. Aliquam lacus ligula, mollis sed tempus in, elementum ut ante. Phasellus ac erat sit amet neque sodales semper. Maecenas sed arcu nisi. Duis feugiat aliquet lacus, nec lobortis tortor consequat sit amet.
+        
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas blandit suscipit justo quis dictum. Cras pharetra ut diam eget finibus. Maecenas pulvinar eros vitae enim efficitur, ac aliquam nisl ullamcorper. Sed sagittis odio nec orci volutpat tincidunt. Phasellus in nunc ac dolor facilisis efficitur. Pellentesque hendrerit quam id tellus malesuada egestas. Donec quis tincidunt justo, eu rutrum ex. Morbi at risus vitae sem luctus scelerisque sed id turpis. Donec in mi ex. Nam quis mauris eget nibh maximus maximus.
+        
+        Nunc consequat commodo lorem et pulvinar. Phasellus urna quam, lobortis sagittis ultrices vel, pulvinar sit amet turpis. Praesent nec sem ac justo suscipit lobortis. Cras a nisl tincidunt enim vehicula interdum. Etiam non justo leo. Donec scelerisque velit at metus vestibulum, sit amet finibus est dictum. Donec est nunc, ultricies nec mi ac, convallis cursus magna. Proin tortor arcu, porttitor ut arcu at, rhoncus tempor nisl. Suspendisse et nunc augue. Quisque ut tellus molestie, pretium est ut, congue urna. Morbi in risus at felis sagittis dignissim. Nunc non ipsum at odio volutpat auctor. Suspendisse in tincidunt diam. Nam at nisi ut turpis feugiat feugiat. Praesent vel placerat felis, eu euismod mi.
+        
+        Praesent tincidunt mattis lobortis. Suspendisse potenti. Fusce ullamcorper eros id tellus suscipit, sed interdum massa luctus. Sed vehicula, sapien sed tempus consequat, tellus leo hendrerit velit, quis fringilla nisi nibh id nulla. Vestibulum tincidunt, urna eu molestie sodales, nisi magna ultricies nulla, a dapibus ipsum arcu a mauris. Maecenas sapien ex, dignissim efficitur fringilla a, vestibulum a arcu. Aenean aliquam id leo ut iaculis. Ut vulputate congue quam nec eleifend.
+        
+        Fusce augue ipsum, rhoncus ac dictum vitae, maximus id velit. Mauris bibendum massa at maximus fringilla. Integer et vehicula urna, at ullamcorper nibh. Morbi maximus diam in diam facilisis vehicula. Suspendisse mi justo, vulputate ut molestie aliquam, bibendum maximus lacus. In sapien turpis, ullamcorper nec semper vitae, aliquam id ex. Etiam mattis metus ut arcu pulvinar suscipit. Nulla a dignissim quam. Nullam aliquet ornare nunc ac dictum. Aliquam aliquam sem nec elit dignissim mattis. Nulla suscipit rutrum blandit. Integer sit amet ultrices leo.
+        
+        Aliquam dapibus felis eu ligula dapibus commodo. Morbi efficitur pharetra dui, eget commodo leo ullamcorper eget. Praesent egestas sapien sed tortor ultricies vulputate ut quis risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi at purus vitae massa condimentum mattis. Nullam ultrices interdum elementum. Nullam rutrum dictum odio, quis cursus erat dapibus nec. Nullam scelerisque commodo sem, sed volutpat nibh tincidunt non. Vivamus at nulla ipsum. Etiam vestibulum sed ligula nec malesuada.
+        
+        Ut eleifend nibh vitae nisl vestibulum, lacinia dignissim metus finibus. Sed pellentesque cursus lorem ut mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam vel magna sit amet justo ornare tincidunt vel sit amet tellus. Sed ullamcorper pulvinar suscipit. Nulla nec tempus lorem. Etiam quis velit non purus lacinia laoreet. Quisque tincidunt metus ut est vestibulum, hendrerit tempor nulla auctor. Nunc consequat luctus metus gravida maximus. Mauris sollicitudin velit non neque tincidunt ornare sit amet ut ex.
+        
+        Generados 10 párrafos, 851 palabras, 5742 bytes de Lorem Ipsum</p>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+        <ul>
+            <p>Frutas</p>
+            <li>Manzana</li>
+            <li>pera</li>
+            <li>sandia</li>
+        </ul>
+</body>
+</html>

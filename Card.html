@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    
+    
+    
+    <script type="text/javascript">
+    
+    
+    var y=0;
+    var s=1;
+    
+    function cambiaFondo(){
+        
+        setInterval(colorsito, 50)
+        
+        function colorsito(){
+            var colores=["#100","#200","#300","#400","#500","#600","#700","#800","#900","#a00","#b00","#c00","#d00","#e00","#f00","#f10","#f20","#f30","#f40","#f50","#f60","#f70","#f80","#f90","#fa0","#fb0","#fc0","#fd0","#fe0","#ff0","#ff0","#ef0","#df0","#cf0","#bf0","#af0","#9f0","#8f0","#7f0","#6f0","#5f0","#4f0","#3f0","#2f0","#1f0","#0f1","#0f2","#0f3","#0f4","#0f5","#0f6","#0f7","#0f8","#0f9","#0fa","#0fb","#0fc","#0fd","#0fe","#0ff","#0ef","#0df","#0cf","#0bf","#0af","#09f","#08f","#07f","#06f","#05f","#04f","#03f","#02f","#01f","#10f","#20f","#30f","#40f","#50f","#60f","#70f","#80f","#90f","#a0f","#b0f","#c0f","#d0f","#e0f","#f0f","#f0e","#f0d","#f0c","#f0b","#f0a","#f09","#f08","#f07","#f06","#f05","#f04","#f03","#f02","#f01","#f00"]
+            
+            y=y+s
+            if(y<105){
+
+            document.getElementById("fondo");
+            console.log(y)
+            
+            fondo.style.backgroundColor = colores[y];
+            }else{
+                s=-1;
+            document.getElementById("fondo");
+            console.log(y)
+            
+            fondo.style.backgroundColor = colores[y];
+            }
+            if(y<0){
+                s=1;
+                document.getElementById("fondo");
+            console.log(y)
+            
+            fondo.style.backgroundColor = colores[y];
+            }
+
+        }
+    
+    }
+
+    </script>
+   
+   
+   
+   <style>
+        body{
+            background-color: white;
+        }
+        .container{
+            display: flex;
+            justify-content: center; 
+            margin-top: 100px;
+            margin-bottom: 100px;           
+        }
+        .card:hover{
+            transition: width 1s, height 1s, transform 1s;
+            transform: scale(1.1);
+        }
+        .card:not(:hover){
+            transition: width 1s, height 1s, transform 1s;
+            transform: scale(1);
+        }
+        .card{
+            width: 350px;
+            height: 500px;
+            position: absolute;
+            background: whitesmoke;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 2px 200px gray;
+        }
+        .fondo{
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            
+            
+        }
+        .fotito{
+            width: 150px;
+            border-radius: 30%;
+            position: absolute;
+            left: 100px;
+            top: 30px;
+            box-shadow: 5px 5px 50px rgb(245, 245, 232);
+        }
+        .fotito:hover{
+            transition: 1.5s;
+            transform: scale(1.3);
+        }
+        .fotito:not(:hover){
+            transition: width 1s, height 1s, transform 1s;
+            transform: scale(1);
+        }
+        .info{
+            font-family: 'IBM Plex Sans', sans-serif;
+            position: absolute;
+            top: 300px;
+            text-align: right;
+        }
+        .info h1{
+            letter-spacing: -2px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: dimgray;
+            font-weight: 200;
+        }
+        .info p{
+            color: lightgray;
+            font-size: 20px;
+        }
+        .info h5{
+            letter-spacing: 0px;
+            color: rgb(145, 145, 145);
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .contact{
+            display: flex;
+            flex-direction: row;
+            /*justify-content: space-between;*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            top: 530px;            
+        }
+        .contact div{
+            margin: 6px;
+        }
+        .contact div:hover{
+            transition: 1s;
+            transform: scale(1.3);
+        }
+        .contact div:not(:hover){
+            transition: 1s;
+            transform: scale(1);
+        }
+        /*a{
+            color:gray;
+        }*/
+        /*a:visited{
+            text-decoration: none;
+            color: gray;*/
+        }
+        .info h1:hover{
+            transition: 1s;
+            transform: scale(1.3);
+        }
+        .info h1:not(:hover){
+            transition: 1s;
+            transform: scale(1);
+        }
+        .wasa{
+            color: rgb(39, 210, 70);
+        }
+        .insta{
+            color: rgb(255,200 , 183);
+        }
+        .github{
+            color: rgb(11, 24, 44);
+        }
+        .twitter{
+            color: rgb(29, 155, 240);
+        }
+
+    </style>
+</head>
+<body id="body" onload="cambiaFondo()">
+    <section class="container">
+        <div class="card">
+            <div class="fondo" id="fondo"></div>
+            <img class="fotito" src="https://avatars.githubusercontent.com/u/87663951?s=400&u=3c3f718b96d41a8d811f16a94893fe97c30330a4&v=4" alt="fotoperfil">
+        </div>
+        <div class="info">
+            <!--<p>Profile card</p>-->
+            <h1>Diego Rodríguez</h1>
+            <h5>Administrador de Empresas</h5>
+            <h5>Desarrollador web</h5>
+        </div>
+        <div class="contact">
+            <div id="github"><a class="github" href="https://github.com/SanDieg0"><svg height="20"  viewBox="0 0 16 16"  width="20"  class="githubLogo"><path  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a></div>
+            <div id="face"><a class="face" href="https://www.facebook.com/profile.php?id=100003542320731" ><img class="faceLogo" src="https://scontent.fbaq8-1.fna.fbcdn.net/v/t39.8562-6/107554830_1744022432412027_1587346293425727213_n.svg?_nc_cat=1&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_eui2=AeFnoJw6ZcSLs2FlKY9WAvDCzxr0IL2_E-zPGvQgvb8T7NJ_QMYQU7D-hiC3_khpNWd7wr9Dj2ZcmjfuBILWszXe&amp;_nc_ohc=gw78fHlIfVAAX_GZECp&amp;_nc_ht=scontent.fbaq8-1.fna&amp;oh=00_AT9WUh2fh8Labj_ial9SF9DvlHXZu425O6G62ptovBV3Tw&amp;oe=6210B849" ></a></div>
+            <div id="insta"><a class="insta" href="https://www.instagram.com/diego.rodriguez47/"  target="_blank" rel="noreferrer noopener nofollow"><img class="instaLogo" src="https://scontent.fbaq8-1.fna.fbcdn.net/v/t39.8562-6/109686771_597629757604330_8061782402512010328_n.svg?_nc_cat=1&amp;ccb=1-5&amp;_nc_sid=6825c5&amp;_nc_eui2=AeFFowU2NbmwebjN642nuE5pu-BQz7Dki0a74FDPsOSLRnzh5nxR1X0L1mt6DWG5NMCNSaxoK9PyXdPa7rV5k5xr&amp;_nc_ohc=w2wVDSLYjVIAX-0tKkU&amp;_nc_ht=scontent.fbaq8-1.fna&amp;oh=00_AT90EmalH23yHPboUgEHhfXF9nuvpDjMbXyHCNJcFYgzeQ&amp;oe=6211A026" height="20" width="20" alt="Instagram" style="box-sizing:border-box;height:20px;width:20px;"></a></div>
+            <div id="twitter"><a class="twitter" href="https://twitter.com/Dieego4742"><img src="https://seeklogo.com/images/T/twitter-icon-circle-black-logo-35827D553B-seeklogo.com.png" height="20" width="20" alt="Twitter" style="box-sizing:border-box;height:20px;width:20px;"></a></div>
+            <div id="wasa"><a class="wasa" href="https://wa.me/+573172488254"><img src="https://image.pngaaa.com/707/695707-middle.png" height="20" width="20" alt="WhatsApp" style="box-sizing:border-box;height:20px;width:20px;"></a></div>
+        </div>
+    </section>
+</body>
+</html>
